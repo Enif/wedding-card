@@ -4,7 +4,7 @@ import photo from '~/assets/main_photo.jpg';
 
 const Wrapper = styled.div({
   color: '#B68E75',
-  height: '4rem',
+  height: '100vh',
   background: 'none',
 })
 
@@ -37,9 +37,12 @@ const Dot = styled.div({
 
 const Photo = styled.img({
   position: 'absolute',
-  top: 0,
+  bottom: 0,
   left: 0,
   zIndex: -1,
+  height: '100%',
+  width: '100%',
+  objectFit: 'cover',
 })
 
 function MainPhoto() {
