@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import heart from '../../assets/header_heart.png';
+import heart from '~/assets/header_heart.png';
 
 const StyledTitle = styled.div({
   color: '#B68E75',

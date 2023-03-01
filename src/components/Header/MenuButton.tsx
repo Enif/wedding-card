@@ -1,12 +1,11 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import iconImg from '../../assets/menu_icon.svg';
+import iconImg from '~/assets/menu_icon.svg';
 
 const StyledButton = styled.button({
   color: '#B68E75',
   height: '4rem',
   background: 'none',
-  border: 'none',
 })
 
 const MenuIcon = styled.img({
