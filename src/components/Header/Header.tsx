@@ -9,6 +9,9 @@ const StyledHeader = styled.div({
   background: 'linear-gradient(85.35deg, #FFFFFF -18%, #FFFDFC 34.52%, #FFEEE6 96.31%)',
   display: 'flex',
   justifyContent: 'space-between',
+  width: '100%',
+  position: 'fixed',
+  zIndex: 1,
 })
 
 function Header() {
