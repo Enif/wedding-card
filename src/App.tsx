@@ -7,6 +7,7 @@ import Intro from './components/Intro/Intro';
 import Invitation from './components/Invitation/Invitation';
 import Location from './components/Location/Location';
 import MainPhoto from './components/MainPhoto/MainPhoto';
+import ThanksTo from './components/ThanksTo/ThanksTo';
 import WeddingGallery from './components/WeddingGallery/WeddingGallery';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Information />
       <Location />
       <Contact />
+      <ThanksTo />
     </div>
   );
 }
