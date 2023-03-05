@@ -9,7 +9,7 @@ import thumbnail_2_3 from '~/assets/gallery/thumbnail_2_3.jpg';
 import thumbnail_3_1 from '~/assets/gallery/thumbnail_3_1.jpg';
 import thumbnail_3_2 from '~/assets/gallery/thumbnail_3_2.jpg';
 import thumbnail_3_3 from '~/assets/gallery/thumbnail_3_3.jpg';
-import heart from '~/assets/gallery_heart.png';
+import heart from '~/assets/heart_gallery.png';
 
 const Wrapper = styled.div({
   backgroundColor: '#FFFFFF',

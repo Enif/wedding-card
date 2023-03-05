@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import Information from './components/Information/Information';
 import Intro from './components/Intro/Intro';
 import Invitation from './components/Invitation/Invitation';
 import MainPhoto from './components/MainPhoto/MainPhoto';
@@ -14,6 +15,7 @@ function App() {
       <MainPhoto />
       <Invitation />
       <WeddingGallery />
+      <Information />
     </div>
   );
 }
