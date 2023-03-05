@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Contact from './components/Contact/Contact';
 import Header from './components/Header/Header';
 import Information from './components/Information/Information';
 import Intro from './components/Intro/Intro';
@@ -18,6 +19,7 @@ function App() {
       <WeddingGallery />
       <Information />
       <Location />
+      <Contact />
     </div>
   );
 }
