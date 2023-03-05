@@ -31,6 +31,18 @@ const NameWrapper = styled.div({
   margin: '0rem 0',
 })
 
+const Button = styled.button({
+  marginTop: '2rem',
+  padding: '1rem',
+  color: '#636363',
+  background: 'rgba(255, 255, 255, 0.4)',
+  border: '2px solid #FFFFFF',
+  borderRadius: '1rem',
+  opacity: '50%',
+  fontSize: '1rem',
+  fontWeight: 'bold',
+})
+
 function Invitation() {
   return (
     <Wrapper>
@@ -54,6 +66,9 @@ function Invitation() {
         2023년 4월 9일 일요일 오후 4시<br />
         빌라드지디 수서 5층 라포레홀
       </Text>
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=영재 수연 결혼&details=https://youngjae.syeon.studio/&dates=20220409T160000/20220409T180000&location=빌라드지디 수서점, 대한민국 서울특별시 강남구 밤고개로 21길 79">
+        <Button>Google 캘린더에 추가</Button>
+      </a>
     </Wrapper>
   );
 }
