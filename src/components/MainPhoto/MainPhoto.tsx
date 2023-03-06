@@ -6,6 +6,7 @@ const Wrapper = styled.div({
   color: '#B68E75',
   height: '100vh',
   background: 'none',
+  position: 'relative',
 })
 
 const Title = styled.div({
