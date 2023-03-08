@@ -5,6 +5,7 @@ import flowerTopImg from '~/assets/flower_top.png';
 import flowerBottomImg from '~/assets/flower_bottom.png';
 import backgroundImg from '~/assets/background_door.jpg';
 import weddingDayImg from '~/assets/wedding_day.png';
+import Couple from './Couple';
 
 const Wrapper = styled.div({
   paddingTop: '4rem',
@@ -28,11 +29,13 @@ const Flower = styled.img({
 })
 
 const FlowerTop = styled(Flower)<{ progress: number }>((props) => ({
-  top: `-${props.progress / 10}rem`,
+  ...(props.progress > 75 && {
+    top: `-${(props.progress - 75) / 3}rem`,
+  }),
 }))
 
 const FlowerBottom = styled(Flower)<{ progress: number }>((props) => ({
-  bottom: `-${props.progress / 7}rem`,
+  bottom: props.progress > 75 ? `-${(props.progress - 75) / 2}rem` : 0,
   ...(props.progress > 100 && {
     display: 'none',
   })
@@ -43,9 +46,11 @@ const Background = styled.img<{ progress: number }>((props) => ({
   left: 0,
   right: 0,
   height: '100%',
-  transform: `scale(${1 + props.progress / 150}, ${1 + props.progress / 150})`,
+  ...(props.progress > 75 && {
+    transform: `scale(${1 + (props.progress - 75) / 100}, ${1 + (props.progress - 75) / 100})`,
+  }),
   objectFit: 'cover',
-  opacity: props.progress > 70 ? 1 - ((props.progress - 70) / 30) : 1
+  opacity: props.progress > 75 ? 1 - ((props.progress - 75) / 30) : 1
 }))
 
 const WeddingDay = styled.img<{ progress: number }>((props) => ({
@@ -53,7 +58,7 @@ const WeddingDay = styled.img<{ progress: number }>((props) => ({
   left: 0,
   right: 0,
   top: '20%',
-  opacity: 1 - (props.progress / 50),
+  opacity: 1 - (props.progress / 20),
   // bottom: '100%',
 }))
 
@@ -88,6 +93,7 @@ function Intro() {
         <FlowerTop src={flowerTopImg} progress={progress} />
         <FlowerBottom src={flowerBottomImg} progress={progress} />
         <WeddingDay src={weddingDayImg} progress={progress} />
+        <Couple progress={progress} />
       </PhotoWrapper>
     </Wrapper>
   );
