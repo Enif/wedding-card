@@ -9,8 +9,8 @@ const Wrapper = styled.div({
 })
 
 const Title = styled.h2({
-  margin: '2rem 0',
-  fontSize: '1.3rem',
+  margin: '2rem 0 1rem',
+  fontSize: '1.1rem',
   fontWeight: 'bold',
   color: '#636363',
   position: 'relative',
@@ -19,7 +19,7 @@ const Title = styled.h2({
 const Heart = styled.img({
   position: 'absolute',
   top: '-0.3rem',
-  left: 'calc(50% - 3.7rem)',
+  left: 'calc(50% - 3.5rem)',
   transform: 'rotate(-0.08turn);'
 })
 

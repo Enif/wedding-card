@@ -12,8 +12,8 @@ const Wrapper = styled.div({
 })
 
 const Title = styled.h2({
-  margin: '2rem 0',
-  fontSize: '1.3rem',
+  margin: '2rem 0 1rem',
+  fontSize: '1.1rem',
   fontWeight: 'bold',
   color: '#FFFFFF',
   position: 'relative',
@@ -42,11 +42,11 @@ const Link = styled.a({
 const Button = styled.button({
   background: 'rgba(255, 255, 255, 0.2)',
   width: '3.5rem',
-  height: '3rem',
+  height: '2.5rem',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  borderRadius: '1rem',
+  borderRadius: '1.2rem',
   border: '2px solid rgba(255, 255, 255, 0.5)',
   margin: '0.3rem',
   transition: '0.2s',
@@ -60,7 +60,7 @@ const Icon = styled.img({
 });
 
 const Account = styled.div({
-  padding: '2rem 0',
+  padding: '1rem 0',
 })
 
 const AccountTitle = styled.h3({

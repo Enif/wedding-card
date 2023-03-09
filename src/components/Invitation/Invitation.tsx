@@ -11,15 +11,15 @@ const Wrapper = styled.div({
 })
 
 const Letter = styled.img({
-  margin: '2rem 0'
+  margin: '2rem 0 1rem 0'
 })
 
 const Text = styled.p({
   color: '#5A5A5A',
-  fontSize: '1.3rem',
+  fontSize: '1rem',
   lineHeight: '1.7',
   fontWeight: 'bold',
-  padding: '1rem',
+  padding: '0.5rem',
 })
 
 const Small = styled.small({
@@ -54,14 +54,14 @@ function Invitation() {
         4월의 따스한 봄볕 아래 피어날<br />
         저희의 새로운 시작을 축복해 주세요.
       </Text>
-      <DottedDivider count={30} color='#5A5A5A' padding='1rem 7rem 0 7rem' />
+      <DottedDivider count={30} color='#5A5A5A' padding='1.5rem 7rem 0.5rem 7rem' />
       <NameWrapper>
         <Text>
           김국태 &sdot;	서은희 <Small>의 장남</Small> 영재<br />
           안경모 &sdot;	고희정 <Small>의 장녀</Small> 수연
         </Text>
       </NameWrapper>
-      <DottedDivider count={30} color='#5A5A5A' padding='0rem 7rem'/>
+      <DottedDivider count={30} color='#5A5A5A' padding='0.5rem 7rem 1.5rem'/>
       <Text>
         2023년 4월 9일 일요일 오후 4시<br />
         빌라드지디 수서 5층 라포레홀

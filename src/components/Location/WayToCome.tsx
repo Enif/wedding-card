@@ -36,11 +36,11 @@ function WayToCome() {
   return (
     <Wrapper>
       <TabWrapper>
-        <Tab selected={method === 'car'} onClick={() => setMethod('car')}>자차 이용 시</Tab>
+        <Tab selected={method === 'car'} onClick={() => setMethod('car')}>자차</Tab>
         <TabDivider />
-        <Tab selected={method === 'subway'} onClick={() => setMethod('subway')}>지하철 이용 시</Tab>
+        <Tab selected={method === 'subway'} onClick={() => setMethod('subway')}>지하철</Tab>
         <TabDivider />
-        <Tab selected={method === 'srt'} onClick={() => setMethod('srt')}>SRT 이용 시</Tab>
+        <Tab selected={method === 'srt'} onClick={() => setMethod('srt')}>SRT</Tab>
       </TabWrapper>
       {
         (() => {

@@ -7,23 +7,24 @@ const Wrapper = styled.div({
   height: '100vh',
   background: 'none',
   position: 'relative',
+  paddingTop: '4rem',
 })
 
 const Title = styled.div({
   display: 'flex',
   justifyContent: 'center',
-  padding: '3rem 0 1rem 0',
+  padding: '1rem 0',
   alignItems: 'center',
 })
 
 const Name = styled.h3({
-  fontSize: '1.3rem',
+  fontSize: '1.1rem',
   color: '#204D78',
-  letterSpacing: '0.4rem'
+  letterSpacing: '0.3rem'
 })
 
 const Date = styled.h3({
-  fontSize: '1.5rem',
+  fontSize: '1.4rem',
   color: '#204D78',
   fontWeight: 'bold',
 })

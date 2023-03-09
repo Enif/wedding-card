@@ -18,6 +18,8 @@ const Title = styled.h3({
 
 const ImageWrapper = styled.div({
   position: 'relative',
+  width: '90%',
+  margin: '0 auto',
 })
 
 const Image = styled.img({
@@ -48,11 +50,11 @@ const Star2 = styled(Image)({
 })
 
 const Text = styled.p({
-  marginTop: '120%',
+  marginTop: '110%',
   color: '#BEA0A1',
-  // margin: '2rem 0',
   fontWeight: 'bold',
   lineHeight: 1.7,
+  fontSize: '0.9rem',
 })
 
 

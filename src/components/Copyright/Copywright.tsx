@@ -7,7 +7,7 @@ const Wrapper = styled.div({
 })
 
 const Text = styled.p({
-  fontSize: '0.8rem',
+  fontSize: '0.7rem',
   color: '#FFFFFF',
   position: 'relative',
   textAlign: 'right',

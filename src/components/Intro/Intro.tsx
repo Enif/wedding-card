@@ -6,18 +6,19 @@ import flowerBottomImg from '~/assets/flower_bottom.png';
 import backgroundImg from '~/assets/background_door.jpg';
 import weddingDayImg from '~/assets/wedding_day.png';
 import Couple from './Couple';
+import { paddingTop } from '~/constants';
 
 const Wrapper = styled.div({
-  paddingTop: '4rem',
+  paddingTop: paddingTop,
   display: 'flex',
   height: '500vh'
 })
 
 const PhotoWrapper = styled.div({
-  height: 'calc(100vh - 4rem)',
+  height: `calc(100vh - ${paddingTop})`,
   width: '100%',
   position: 'sticky',
-  top: '4rem',
+  top: paddingTop,
   overflow: 'hidden',
   background: '#ABC9E6',
 })
@@ -57,7 +58,7 @@ const WeddingDay = styled.img<{ progress: number }>((props) => ({
   position: 'absolute',
   left: 0,
   right: 0,
-  top: '20%',
+  top: 'calc(50% - 15rem)',
   opacity: 1 - (props.progress / 20),
   // bottom: '100%',
 }))

@@ -4,12 +4,11 @@ import iconImg from '~/assets/menu_icon.svg';
 
 const StyledButton = styled.button({
   color: '#B68E75',
-  height: '4rem',
   background: 'none',
 })
 
 const MenuIcon = styled.img({
-  margin: '0 0.5rem'
+  margin: '0 0.3rem'
 })
 
 function MenuButton() {

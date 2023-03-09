@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 
 const Wrapper = styled.div({
-  padding: '1rem 0',
+  padding: '0.8rem 0',
   margin: '0rem 0',
   display: 'flex',
 })

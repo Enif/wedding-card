@@ -11,7 +11,7 @@ const Wrapper = styled.div({
 
 const Title = styled.h2({
   margin: '2rem 0',
-  fontSize: '1.3rem',
+  fontSize: '1.1rem',
   fontWeight: 'bold',
   color: '#636363',
   position: 'relative',
@@ -24,7 +24,7 @@ const Heart = styled.img({
 })
 
 const FloorWrapper = styled.div({
-  padding: '0 1.5rem',
+  padding: '0 0.5rem',
   margin: '1rem 1.5rem',
   position: 'relative',
   fontWeight: 'bold',
@@ -40,14 +40,14 @@ const VillaDeGD = styled.img({
 })
 
 const ExtraInfoWrapper = styled.div({
-  padding: '0 2rem'
+  padding: '0 1.5rem'
 })
 
 const ExtraInfo = styled.div({
   backgroundColor: '#F0EBE7',
   borderRadius: '1.3rem',
   margin: '1rem 0',
-  padding: '1.3rem',
+  padding: '1.3rem 1rem',
   fontWeight: 'bold',
   color: '#5A5A5A',
   lineHeight: 1.5,

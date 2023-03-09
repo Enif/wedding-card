@@ -8,10 +8,6 @@ const Wrapper = styled.div({
 })
 
 
-const Highlight = styled.span({
-  backgroundColor: '#F4C7B1',
-})
-
 const Address = styled.p({
   fontWeight: 'bold',
   color: '#5A5A5A',
@@ -19,6 +15,7 @@ const Address = styled.p({
   justifyContent: 'space-between',
   alignItems: 'center',
   padding: '0 1rem',
+  fontSize: '0.9rem'
 })
 
 const Copy = styled.button({
@@ -54,7 +51,6 @@ const NavigationMethod = styled.button({
 })
 
 const Parking = styled.p({
-  fontWeight: 'bold',
   color: '#5A5A5A',
 })
 
@@ -63,6 +59,7 @@ const ParkingTitle = styled.h3({
   fontWeight: 'bold',
   color: '#5A5A5A',
   textAlign: 'left',
+  fontSize: '0.9rem'
 })
 
 const ParkingText = styled.p({

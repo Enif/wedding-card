@@ -4,7 +4,6 @@ import heart from '~/assets/header_heart.png';
 
 const StyledTitle = styled.div({
   color: '#B68E75',
-  height: '4rem',
   paddingLeft: '2rem',
   display: 'flex',
   alignItems: 'center',
