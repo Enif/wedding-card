@@ -5,7 +5,7 @@ import WayBySRT from './WayBySRT';
 import WayBySubway from './WayBySubway';
 
 const Wrapper = styled.div({
-  padding: '2rem 1rem',
+  padding: '1.5rem 1rem',
   backgroundColor: '#F9F7F5',
 })
 

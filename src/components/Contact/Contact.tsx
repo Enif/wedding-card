@@ -7,12 +7,12 @@ import messageIcon from '~/assets/icon_message.svg';
 import AccountNumber from './AccountNumber';
 
 const Wrapper = styled.div({
-  paddingTop: '2rem',
-  background: 'linear-gradient(180deg, #C1A1A1 0%, #B0959F 25.42%, #A288A3 40.52%, #8065AE 60.31%, #8A66AA 72.81%, #AF6A9B 100%)',
+  padding: '2rem 0',
+  background: 'linear-gradient(180deg, #C1A1A1 0%, #8065AE 100%);',
 })
 
 const Title = styled.h2({
-  margin: '2rem 0 1rem',
+  margin: '1rem 0 1rem',
   fontSize: '1.1rem',
   fontWeight: 'bold',
   color: '#FFFFFF',
@@ -22,7 +22,7 @@ const Title = styled.h2({
 const Grid = styled.div({
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
-  padding: '1rem 2rem',
+  padding: '0.5rem 2rem 1rem',
   gap: '1rem',
 })
 
@@ -65,12 +65,12 @@ const Account = styled.div({
 
 const AccountTitle = styled.h3({
   color: '#FFFFFF',
-  fontSize: '1.1rem',
+  fontSize: '1rem',
 })
 
 const AccountText = styled.p({
   color: '#EFEFEF',
-  fontSize: '0.8rem',
+  fontSize: '0.7rem',
   margin: '0.7rem 0',
 })
 

@@ -34,14 +34,17 @@ type Props = {
 function Couple(props: Props) {
 
   const opacity = (() => {
-    if(props.progress < 25) {
+    if(props.progress < 20) {
       return 0;
     }
-    if(props.progress < 50) {
-      return (props.progress - 25) / 25;
+    if(props.progress < 40) {
+      return (props.progress - 20) / 20;
     }
-    if (props.progress < 75) {
-      return 1 - (props.progress - 50) / 25;
+    if (props.progress < 60) {
+      return 1;
+    }
+    if (props.progress < 80) {
+      return 1 - (props.progress - 60) / 20;
     }
     return 0; 
   })()

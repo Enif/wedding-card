@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 import heart from '~/assets/heart_information.png';
 import map from '~/assets/map.jpg';
+import { FontColor } from '~/constants';
 import WayToCome from './WayToCome';
 
 const Wrapper = styled.div({
@@ -12,7 +13,7 @@ const Title = styled.h2({
   margin: '2rem 0 1rem',
   fontSize: '1.1rem',
   fontWeight: 'bold',
-  color: '#636363',
+  color: FontColor.Normal,
   position: 'relative',
 })
 
@@ -24,7 +25,7 @@ const Heart = styled.img({
 })
 
 const Map = styled.img({
-  padding: '0 4rem',
+  padding: '0 2rem',
 })
 
 function Location() {

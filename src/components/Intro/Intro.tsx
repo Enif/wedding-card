@@ -59,7 +59,7 @@ const WeddingDay = styled.img<{ progress: number }>((props) => ({
   left: 0,
   right: 0,
   top: 'calc(50% - 15rem)',
-  opacity: 1 - (props.progress / 20),
+  opacity: 1 - (props.progress / 15),
   // bottom: '100%',
 }))
 

@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 
 import letterImg from '~/assets/letter.png';
+import { FontColor } from '~/constants';
 import DottedDivider from '../Common/DottedDivider';
 
 const Wrapper = styled.div({
@@ -11,11 +12,11 @@ const Wrapper = styled.div({
 })
 
 const Letter = styled.img({
-  margin: '2rem 0 1rem 0'
+  margin: '0'
 })
 
 const Text = styled.p({
-  color: '#5A5A5A',
+  color: FontColor.Normal,
   fontSize: '1rem',
   lineHeight: '1.7',
   fontWeight: 'bold',
@@ -23,7 +24,8 @@ const Text = styled.p({
 })
 
 const Small = styled.small({
-  fontSize: '1rem',
+  fontSize: '0.9rem',
+  margin: '0 0.2rem',
 })
 
 const NameWrapper = styled.div({
@@ -34,7 +36,7 @@ const NameWrapper = styled.div({
 const Button = styled.button({
   marginTop: '2rem',
   padding: '1rem',
-  color: '#636363',
+  color: FontColor.Normal,
   background: 'rgba(255, 255, 255, 0.4)',
   border: '2px solid #FFFFFF',
   borderRadius: '1rem',
@@ -54,14 +56,14 @@ function Invitation() {
         4월의 따스한 봄볕 아래 피어날<br />
         저희의 새로운 시작을 축복해 주세요.
       </Text>
-      <DottedDivider count={30} color='#5A5A5A' padding='1.5rem 7rem 0.5rem 7rem' />
+      <DottedDivider count={30} color={FontColor.Normal} padding='1.5rem 7rem 0.5rem 7rem' />
       <NameWrapper>
         <Text>
           김국태 &sdot;	서은희 <Small>의 장남</Small> 영재<br />
           안경모 &sdot;	고희정 <Small>의 장녀</Small> 수연
         </Text>
       </NameWrapper>
-      <DottedDivider count={30} color='#5A5A5A' padding='0.5rem 7rem 1.5rem'/>
+      <DottedDivider count={30} color={FontColor.Normal} padding='0.5rem 7rem 1.5rem'/>
       <Text>
         2023년 4월 9일 일요일 오후 4시<br />
         빌라드지디 수서 5층 라포레홀

@@ -10,6 +10,7 @@ import thumbnail_3_1 from '~/assets/gallery/thumbnail_3_1.jpg';
 import thumbnail_3_2 from '~/assets/gallery/thumbnail_3_2.jpg';
 import thumbnail_3_3 from '~/assets/gallery/thumbnail_3_3.jpg';
 import heart from '~/assets/heart_gallery.png';
+import { FontColor } from '~/constants';
 
 const Wrapper = styled.div({
   backgroundColor: '#FFFFFF',
@@ -18,9 +19,9 @@ const Wrapper = styled.div({
 
 const Title = styled.h2({
   margin: '2rem 0',
-  fontSize: '1.3rem',
+  fontSize: '1.1rem',
   fontWeight: 'bold',
-  color: '#636363',
+  color: FontColor.Normal,
 })
 
 const Heart = styled.img({
@@ -42,7 +43,7 @@ const Thumbnail = styled.img({
 
 const Button = styled.button({
   marginTop: '1rem',
-  color: '#5A5A5A',
+  color: FontColor.Normal,
   background: 'none',
   fontSize: '1rem',
   fontWeight: 'bold',

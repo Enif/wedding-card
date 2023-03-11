@@ -4,6 +4,7 @@ import heart from '~/assets/heart_information.png';
 import FloorInfo from './FloorInfo';
 import villaDeGDImg from '~/assets/villa_de_gd.png';
 import DottedDivider from '../Common/DottedDivider';
+import { FontColor } from '~/constants';
 
 const Wrapper = styled.div({
   padding: '2rem 1rem'
@@ -13,7 +14,7 @@ const Title = styled.h2({
   margin: '2rem 0',
   fontSize: '1.1rem',
   fontWeight: 'bold',
-  color: '#636363',
+  color: FontColor.Normal,
   position: 'relative',
 })
 
@@ -28,7 +29,7 @@ const FloorWrapper = styled.div({
   margin: '1rem 1.5rem',
   position: 'relative',
   fontWeight: 'bold',
-  color: '#5A5A5A',
+  color: FontColor.Normal,
 })
 
 const VillaDeGD = styled.img({
@@ -40,18 +41,18 @@ const VillaDeGD = styled.img({
 })
 
 const ExtraInfoWrapper = styled.div({
-  padding: '0 1.5rem'
+  padding: '0 1.5rem',
 })
 
 const ExtraInfo = styled.div({
   backgroundColor: '#F0EBE7',
   borderRadius: '1.3rem',
-  margin: '1rem 0',
+  margin: '0.8rem 0',
   padding: '1.3rem 1rem',
   fontWeight: 'bold',
-  color: '#5A5A5A',
+  color: FontColor.Normal,
   lineHeight: 1.5,
-  fontSize: '0.9rem',
+  fontSize: '0.8rem',
 })
 
 const Highlight = styled.span({
@@ -71,7 +72,7 @@ function Information() {
         <FloorInfo floor='1F' info='2부 연회장' />
         <FloorInfo floor='B1F' info='ATM 인출기' />
       </FloorWrapper>
-      <DottedDivider count={20} color='#5A5A5A' padding='0rem 5rem' margin='2rem 0' />
+      {/* <DottedDivider count={20} color=FontColor.Normal padding='0rem 5rem' margin='2rem 0' /> */}
       <ExtraInfoWrapper>
         <ExtraInfo>1부 예식, 사진 촬영, 2부 및 연회 마무리까지 약 2시간이 소요될 예정입니다.</ExtraInfo>
         <ExtraInfo>식사를 일찍 하시거나 2부에 참석하지 않는 분들께서는 <Highlight>4층 연회장</Highlight>을 이용해주세요.</ExtraInfo>

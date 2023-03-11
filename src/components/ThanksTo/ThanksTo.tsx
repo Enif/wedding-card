@@ -12,7 +12,7 @@ const Wrapper = styled.div({
 
 const Title = styled.h3({
   color: '#BEA0A1',
-  margin: '2rem 0',
+  margin: '2rem 0 1rem',
   fontWeight: 'bold',
 })
 
@@ -27,7 +27,7 @@ const Image = styled.img({
   left: 0,
   right: 0,
   top: 0,
-  padding: '0 1rem',
+  padding: '0 1.5rem',
 });
 
 const Twinkle = keyframes`
@@ -50,7 +50,7 @@ const Star2 = styled(Image)({
 })
 
 const Text = styled.p({
-  marginTop: '110%',
+  marginTop: '100%',
   color: '#BEA0A1',
   fontWeight: 'bold',
   lineHeight: 1.7,
