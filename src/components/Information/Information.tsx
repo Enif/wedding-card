@@ -61,7 +61,7 @@ const Highlight = styled.span({
 
 function Information() {
   return (
-    <Wrapper>
+    <Wrapper id='information'>
       <Title>Information<Heart src={heart} /></Title>
       <FloorWrapper>
         <VillaDeGD src={villaDeGDImg} />

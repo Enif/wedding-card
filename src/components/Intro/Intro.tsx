@@ -88,7 +88,7 @@ function Intro() {
   }, []);
 
   return (
-    <Wrapper ref={ref}>
+    <Wrapper ref={ref} id='intro'>
       <PhotoWrapper>
         <Background src={backgroundImg} progress={progress} />
         <FlowerTop src={flowerTopImg} progress={progress} />

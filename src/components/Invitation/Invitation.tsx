@@ -47,7 +47,7 @@ const Button = styled.button({
 
 function Invitation() {
   return (
-    <Wrapper>
+    <Wrapper id='invitation'>
       <Letter src={letterImg} />
       <Text>
         열 번째 봄,<br />

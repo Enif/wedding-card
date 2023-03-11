@@ -76,7 +76,7 @@ const AccountText = styled.p({
 
 function Contact() {
   return (
-    <Wrapper>
+    <Wrapper id='contact'>
       <Title>Contact</Title>
       <Grid>
         <ProfileImg src={youngjaeProfileImg}></ProfileImg>

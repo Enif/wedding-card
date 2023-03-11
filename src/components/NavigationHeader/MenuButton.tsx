@@ -11,10 +11,18 @@ const MenuIcon = styled.img({
   margin: '0 0.3rem'
 })
 
-function MenuButton() {
+type Props = {
+  isMenuOpen: boolean;
+  setIsMenuOpen: (isMenuOpen: boolean) => void;
+}
+
+function MenuButton(props: Props) {
+
+  const { isMenuOpen, setIsMenuOpen } = props;
+
   return (
-    <StyledButton>
-      <MenuIcon src={iconImg} />
+    <StyledButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <MenuIcon src={isMenuOpen ? iconImg : iconImg} />
     </StyledButton>
   );
 }

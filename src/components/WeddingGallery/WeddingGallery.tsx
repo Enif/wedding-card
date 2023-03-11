@@ -51,7 +51,7 @@ const Button = styled.button({
 
 function WeddingGallery() {
   return (
-    <Wrapper>
+    <Wrapper id='gallery'>
       <Title>Wedding Gallery<Heart src={heart} /></Title>
       <ThumbnailsWrapper>
         <Thumbnail src={thumbnail_1_1} />

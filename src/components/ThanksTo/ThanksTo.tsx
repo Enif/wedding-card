@@ -60,7 +60,7 @@ const Text = styled.p({
 
 function ThanksTo() {
   return (
-    <Wrapper>
+    <Wrapper id='thanksTo'>
       <Title>Thanks To</Title>
       <ImageWrapper>
         <Image src={window} />

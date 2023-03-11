@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Contact from './components/Contact/Contact';
-import Copywright from './components/Copyright/Copywright';
-import Header from './components/Header/Header';
+import { Copyright } from './components/Copyright/Copyright';
+import { NavigationHeader } from './components/NavigationHeader/NavigationHeader';
 import Information from './components/Information/Information';
 import Intro from './components/Intro/Intro';
 import Invitation from './components/Invitation/Invitation';
@@ -10,11 +10,18 @@ import Location from './components/Location/Location';
 import MainPhoto from './components/MainPhoto/MainPhoto';
 import ThanksTo from './components/ThanksTo/ThanksTo';
 import WeddingGallery from './components/WeddingGallery/WeddingGallery';
+import styled from '@emotion/styled';
+
+const StyledApp = styled.div({
+  textAlign: 'center',
+  maxWidth: '30rem',
+  position: 'relative',
+});
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <StyledApp>
+      <NavigationHeader />
       <Intro />
       <MainPhoto />
       <Invitation />
@@ -23,8 +30,8 @@ function App() {
       <Location />
       <Contact />
       <ThanksTo />
-      <Copywright />
-    </div>
+      <Copyright />
+    </StyledApp>
   );
 }
 

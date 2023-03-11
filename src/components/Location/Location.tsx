@@ -30,7 +30,7 @@ const Map = styled.img({
 
 function Location() {
   return (
-    <Wrapper>
+    <Wrapper id='location'>
       <Title>Location<Heart src={heart} /></Title>
       <Map src={map} />
       <WayToCome />

@@ -49,7 +49,7 @@ const Photo = styled.img({
 
 function MainPhoto() {
   return (
-    <Wrapper>
+    <Wrapper id='main'>
       <Photo src={photo} />
       <Title>
         <Name>김영재</Name>
