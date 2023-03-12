@@ -54,7 +54,7 @@ const NavigationMethod = styled.button({
   padding: '0.5rem 0.7rem',
 })
 
-const Parking = styled.p({
+const Parking = styled.div({
   color: FontColor.Normal,
 })
 
