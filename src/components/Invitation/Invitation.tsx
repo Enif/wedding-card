@@ -8,12 +8,12 @@ import DottedDivider from '../Common/DottedDivider';
 const Wrapper = styled.div({
   backgroundColor: '#EADBD7',
   clipPath: 'circle(100% at 50% 85%)',
-  padding: '5rem 0'
-})
+  padding: '5rem 0',
+});
 
 const Letter = styled.img({
-  margin: '0'
-})
+  margin: '0',
+});
 
 const Text = styled.p({
   color: FontColor.Normal,
@@ -21,17 +21,17 @@ const Text = styled.p({
   lineHeight: '1.7',
   fontWeight: 'bold',
   padding: '0.5rem',
-})
+});
 
 const Small = styled.small({
   fontSize: '0.9rem',
   margin: '0 0.2rem',
-})
+});
 
 const NameWrapper = styled.div({
   padding: '1rem 0',
   margin: '0rem 0',
-})
+});
 
 const Button = styled.button({
   marginTop: '2rem',
@@ -43,31 +43,46 @@ const Button = styled.button({
   opacity: '50%',
   fontSize: '1rem',
   fontWeight: 'bold',
-})
+});
 
 function Invitation() {
   return (
-    <Wrapper id='invitation'>
+    <Wrapper id="invitation">
       <Letter src={letterImg} />
       <Text>
-        열 번째 봄,<br />
-        이제는 서로를 위한 햇살이 되어<br />
-        모든 순간을 함께하려 합니다.<br />
-        4월의 따스한 봄볕 아래 피어날<br />
+        열 번째 봄,
+        <br />
+        이제는 서로를 위한 햇살이 되어
+        <br />
+        모든 순간을 함께하려 합니다.
+        <br />
+        4월의 따스한 봄볕 아래 피어날
+        <br />
         저희의 새로운 시작을 축복해 주세요.
       </Text>
-      <DottedDivider count={30} color={FontColor.Normal} padding='1.5rem 7rem 0.5rem 7rem' />
+      <DottedDivider count={30} color={FontColor.Normal} padding="1.5rem 7rem 0.5rem 7rem" />
       <NameWrapper>
         <Text>
-          김국태 &sdot;	서은희 <Small>의 장남</Small> 영재<br />
-          안경모 &sdot;	고희정 <Small>의 장녀</Small> 수연
+          김국태 &sdot; 서은희
+          {' '}
+          <Small>의 장남</Small>
+          {' '}
+          영재
+          <br />
+          안경모 &sdot; 고희정
+          {' '}
+          <Small>의 장녀</Small>
+          {' '}
+          수연
         </Text>
       </NameWrapper>
-      <DottedDivider count={30} color={FontColor.Normal} padding='0.5rem 7rem 1.5rem'/>
+      <DottedDivider count={30} color={FontColor.Normal} padding="0.5rem 7rem 1.5rem" />
       <Text>
-        2023년 4월 9일 일요일 오후 4시<br />
+        2023년 4월 9일 일요일 오후 4시
+        <br />
         빌라드지디 수서 5층 라포레홀
       </Text>
+      {/* eslint-disable-next-line max-len */}
       <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=영재 수연 결혼&details=https://youngjae.syeon.studio/&dates=20220409T160000/20220409T180000&location=빌라드지디 수서점, 대한민국 서울특별시 강남구 밤고개로 21길 79">
         <Button>Google 캘린더에 추가</Button>
       </a>

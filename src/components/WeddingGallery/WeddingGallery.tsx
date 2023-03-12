@@ -14,20 +14,20 @@ import { FontColor } from '~/constants';
 
 const Wrapper = styled.div({
   backgroundColor: '#FFFFFF',
-  padding: '2rem 1rem'
-})
+  padding: '2rem 1rem',
+});
 
 const Title = styled.h2({
   margin: '2rem 0',
   fontSize: '1.1rem',
   fontWeight: 'bold',
   color: FontColor.Normal,
-})
+});
 
 const Heart = styled.img({
   position: 'relative',
   top: '-0.2rem',
-})
+});
 
 const ThumbnailsWrapper = styled.div({
   padding: '1rem 0',
@@ -35,11 +35,11 @@ const ThumbnailsWrapper = styled.div({
   display: 'grid',
   gap: '0.5rem',
   gridTemplateColumns: '1fr 1fr 1fr',
-})
+});
 
 const Thumbnail = styled.img({
-  borderRadius: '1.5rem'
-})
+  borderRadius: '1.5rem',
+});
 
 const Button = styled.button({
   marginTop: '1rem',
@@ -47,12 +47,15 @@ const Button = styled.button({
   background: 'none',
   fontSize: '1rem',
   fontWeight: 'bold',
-})
+});
 
 function WeddingGallery() {
   return (
-    <Wrapper id='gallery'>
-      <Title>Wedding Gallery<Heart src={heart} /></Title>
+    <Wrapper id="gallery">
+      <Title>
+        Wedding Gallery
+        <Heart src={heart} />
+      </Title>
       <ThumbnailsWrapper>
         <Thumbnail src={thumbnail_1_1} />
         <Thumbnail src={thumbnail_1_2} />
@@ -64,6 +67,7 @@ function WeddingGallery() {
         <Thumbnail src={thumbnail_3_2} />
         <Thumbnail src={thumbnail_3_3} />
       </ThumbnailsWrapper>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a>
         <Button>+ 사진 더보기</Button>
       </a>

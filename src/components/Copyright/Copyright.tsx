@@ -8,27 +8,30 @@ const Wrapper = styled.div<{ isHeader?: boolean }>((props) => ({
     position: 'absolute',
     bottom: 0,
     right: 0,
-  })
-}))
+  }),
+}));
 
 const Text = styled.p<{ isHeader?: boolean }>((props) => ({
   fontSize: '0.7rem',
   color: props.isHeader ? '#B68E75' : '#FFFFFF',
   position: 'relative',
   textAlign: 'right',
-  lineHeight: 1.5
-}))
+  lineHeight: 1.5,
+}));
 
 type Props = {
   isHeader?: boolean
-}
+};
 
 export function Copyright(props: Props) {
+  const { isHeader } = props;
   return (
-    <Wrapper isHeader={props.isHeader}>
-      <Text isHeader={props.isHeader}>
-        Design by. 수연<br />
-        Developed by. 영재<br />
+    <Wrapper isHeader={isHeader}>
+      <Text isHeader={isHeader}>
+        Design by. 수연
+        <br />
+        Developed by. 영재
+        <br />
         Copyright &copy; Syeon, Youngjae Kim all rights reserved
       </Text>
     </Wrapper>

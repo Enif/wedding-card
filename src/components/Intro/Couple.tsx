@@ -19,35 +19,35 @@ const Drawing = styled.img({
   // position: 'absolute',
   paddingLeft: '2rem',
   width: '12rem',
-})
+});
 
 const Text = styled.p({
   fontSize: '1.1rem',
   color: '#F19086',
   fontWeight: 'bold',
-})
+});
 
 type Props = {
   progress: number
-}
+};
 
 function Couple(props: Props) {
-
+  const { progress } = props;
   const opacity = (() => {
-    if(props.progress < 20) {
+    if (progress < 20) {
       return 0;
     }
-    if(props.progress < 40) {
-      return (props.progress - 20) / 20;
+    if (progress < 40) {
+      return (progress - 20) / 20;
     }
-    if (props.progress < 60) {
+    if (progress < 60) {
       return 1;
     }
-    if (props.progress < 80) {
-      return 1 - (props.progress - 60) / 20;
+    if (progress < 80) {
+      return 1 - (progress - 60) / 20;
     }
-    return 0; 
-  })()
+    return 0;
+  })();
 
   return (
     <Wrapper opacity={opacity}>

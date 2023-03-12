@@ -17,24 +17,22 @@ const Name = styled.p({
   fontSize: '0.9rem',
   textAlign: 'right',
   lineHeight: 1.5,
-})
+});
 
 const Number = styled.p({
   fontSize: '0.7rem',
   textAlign: 'right',
-})
-
+});
 
 type Props = {
   name: string;
   accountNumber: string;
-}
+};
 
-function AccountNumber({ name, accountNumber}: Props) {
-
+function AccountNumber({ name, accountNumber }: Props) {
   const onClickButton = () => {
-    navigator.clipboard.writeText(accountNumber);   
-  }
+    navigator.clipboard.writeText(accountNumber);
+  };
   return (
     <Button onClick={onClickButton}>
       <Name>{name}</Name>

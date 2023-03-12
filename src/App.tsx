@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import styled from '@emotion/styled';
 import Contact from './components/Contact/Contact';
 import { Copyright } from './components/Copyright/Copyright';
 import { NavigationHeader } from './components/NavigationHeader/NavigationHeader';
@@ -10,7 +11,6 @@ import Location from './components/Location/Location';
 import MainPhoto from './components/MainPhoto/MainPhoto';
 import ThanksTo from './components/ThanksTo/ThanksTo';
 import WeddingGallery from './components/WeddingGallery/WeddingGallery';
-import styled from '@emotion/styled';
 
 const StyledApp = styled.div({
   textAlign: 'center',

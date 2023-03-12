@@ -7,12 +7,11 @@ const StyledTitle = styled.div({
   paddingLeft: '2rem',
   display: 'flex',
   alignItems: 'center',
-})
+});
 
 const HeartImage = styled.img({
-  margin: '0 0.5rem'
-})
-
+  margin: '0 0.5rem',
+});
 
 function HeaderTitle() {
   return (

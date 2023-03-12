@@ -1,5 +1,5 @@
-import styled from "@emotion/styled"
-import { FontColor } from "~/constants"
+import styled from '@emotion/styled';
+import { FontColor } from '~/constants';
 
 export const SubTitle = styled.h3({
   margin: '1rem 0',
@@ -7,10 +7,10 @@ export const SubTitle = styled.h3({
   color: FontColor.Normal,
   textAlign: 'center',
   fontSize: '0.9rem',
-})
+});
 
 export const SubText = styled.p({
   textAlign: 'center',
   fontSize: '0.8rem',
   lineHeight: 1.5,
-})
+});

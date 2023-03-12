@@ -8,26 +8,26 @@ const Wrapper = styled.div({
   background: 'none',
   position: 'relative',
   paddingTop: '4rem',
-})
+});
 
 const Title = styled.div({
   display: 'flex',
   justifyContent: 'center',
   padding: '1rem 0',
   alignItems: 'center',
-})
+});
 
 const Name = styled.h3({
   fontSize: '1.1rem',
   color: '#204D78',
-  letterSpacing: '0.3rem'
-})
+  letterSpacing: '0.3rem',
+});
 
 const Date = styled.h3({
   fontSize: '1.4rem',
   color: '#204D78',
   fontWeight: 'bold',
-})
+});
 
 const Dot = styled.div({
   width: '0.5rem',
@@ -35,7 +35,7 @@ const Dot = styled.div({
   borderRadius: '50%',
   backgroundColor: '#6D9AC5',
   margin: '0 1.2rem',
-})
+});
 
 const Photo = styled.img({
   position: 'absolute',
@@ -45,17 +45,17 @@ const Photo = styled.img({
   height: '100%',
   width: '100%',
   objectFit: 'cover',
-})
+});
 
 function MainPhoto() {
   return (
-    <Wrapper id='main'>
+    <Wrapper id="main">
       <Photo src={photo} />
       <Title>
         <Name>김영재</Name>
         <Dot />
         <Date>Apr. 9</Date>
-        <Dot />        
+        <Dot />
         <Name>안수연</Name>
       </Title>
     </Wrapper>

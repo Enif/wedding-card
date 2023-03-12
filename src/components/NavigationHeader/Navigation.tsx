@@ -21,34 +21,33 @@ const Link = styled.a({
     color: FontColor.Normal,
   },
   '&:hover': {
-    color: '#EE7878'
-  }
-})
+    color: '#EE7878',
+  },
+});
 
 type Props = {
   closeMenu: () => void;
-}
+};
 
 export function Navigation(props: Props) {
-
   const { closeMenu } = props;
 
   const onClickLink = (hash: string) => () => {
     window.location.hash = hash;
     closeMenu();
-  }
+  };
 
   return (
     <Wrapper>
-      <Link href='/#intro' onClick={closeMenu}>Intro</Link>
-      <Link href='/#main' onClick={closeMenu}>Main</Link>
-      <Link href='/#invitation' onClick={closeMenu}>Invitation</Link>
-      <Link href='/#gallery' onClick={onClickLink('#gallery')}>Wedding Gallery</Link>
-      <Link href='/#information' onClick={closeMenu}>Information</Link>
-      <Link href='/#location' onClick={closeMenu}>Location</Link>
-      <Link href='/#contact' onClick={closeMenu}>Contact</Link>
+      <Link href="/#intro" onClick={closeMenu}>Intro</Link>
+      <Link href="/#main" onClick={closeMenu}>Main</Link>
+      <Link href="/#invitation" onClick={closeMenu}>Invitation</Link>
+      <Link href="/#gallery" onClick={onClickLink('#gallery')}>Wedding Gallery</Link>
+      <Link href="/#information" onClick={closeMenu}>Information</Link>
+      <Link href="/#location" onClick={closeMenu}>Location</Link>
+      <Link href="/#contact" onClick={closeMenu}>Contact</Link>
       {/* <Link>Guestbook</Link> */}
-      <Link href='/#thanksTo' onClick={closeMenu}>Thanks to</Link>
+      <Link href="/#thanksTo" onClick={closeMenu}>Thanks to</Link>
     </Wrapper>
   );
 }

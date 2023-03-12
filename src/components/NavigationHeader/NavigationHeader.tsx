@@ -18,7 +18,7 @@ const Wrapper = styled.div<{ isMenuOpen: boolean }>((props) => ({
   zIndex: 1,
 }));
 
-const Header = styled.div<{ isMenuOpen: boolean }>((props) => ({
+const Header = styled.div<{ isMenuOpen: boolean }>(() => ({
   color: '#B68E75',
   height: paddingTop,
   background: 'none',
@@ -34,11 +34,11 @@ export function NavigationHeader() {
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto'
+      document.body.style.overflow = 'auto';
     }
-  })
+  });
 
   return (
     <Wrapper isMenuOpen={isMenuOpen}>
@@ -47,10 +47,12 @@ export function NavigationHeader() {
         <MenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       </Header>
       {
-        isMenuOpen && <>
+        isMenuOpen && (
+        <>
           <Navigation closeMenu={() => setIsMenuOpen(false)} />
-          <Copyright isHeader={true} />
+          <Copyright isHeader />
         </>
+        )
       }
     </Wrapper>
   );

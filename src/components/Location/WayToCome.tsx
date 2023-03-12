@@ -7,13 +7,13 @@ import WayBySubway from './WayBySubway';
 const Wrapper = styled.div({
   padding: '1.5rem 1rem',
   backgroundColor: '#F9F7F5',
-})
+});
 
 const TabWrapper = styled.div({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-})
+});
 
 const Tab = styled.button<{ selected: boolean }>((props) => ({
   background: props.selected ? '#CABBAD' : 'none',
@@ -21,16 +21,15 @@ const Tab = styled.button<{ selected: boolean }>((props) => ({
   padding: '0.5rem',
   margin: '0 0.5rem',
   fontWeight: 'bold',
-}))
+}));
 
 const TabDivider = styled.div({
   height: '1rem',
   width: '2px',
   backgroundColor: '#AAA9A8',
-})
+});
 
 function WayToCome() {
-
   const [method, setMethod] = useState<'car' | 'subway' | 'srt'>('car');
 
   return (
@@ -44,15 +43,15 @@ function WayToCome() {
       </TabWrapper>
       {
         (() => {
-          switch(method) {
+          switch (method) {
             case 'car': {
-              return <WayByCar />
+              return <WayByCar />;
             }
             case 'subway': {
-              return <WayBySubway />
+              return <WayBySubway />;
             }
             case 'srt': {
-              return <WayBySRT />
+              return <WayBySRT />;
             }
           }
         })()
