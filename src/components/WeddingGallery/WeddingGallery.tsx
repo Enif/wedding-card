@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import React from 'react';
+import React, { useState } from 'react';
 import thumbnail_1_1 from '~/assets/gallery/thumbnail_1_1.jpg';
 import thumbnail_1_2 from '~/assets/gallery/thumbnail_1_2.jpg';
 import thumbnail_1_3 from '~/assets/gallery/thumbnail_1_3.jpg';
@@ -9,6 +9,15 @@ import thumbnail_2_3 from '~/assets/gallery/thumbnail_2_3.jpg';
 import thumbnail_3_1 from '~/assets/gallery/thumbnail_3_1.jpg';
 import thumbnail_3_2 from '~/assets/gallery/thumbnail_3_2.jpg';
 import thumbnail_3_3 from '~/assets/gallery/thumbnail_3_3.jpg';
+import thumbnail_4_1 from '~/assets/gallery/thumbnail_4_1.jpg';
+import thumbnail_4_2 from '~/assets/gallery/thumbnail_4_2.jpg';
+import thumbnail_4_3 from '~/assets/gallery/thumbnail_4_3.jpg';
+import thumbnail_5_1 from '~/assets/gallery/thumbnail_5_1.jpg';
+import thumbnail_5_2 from '~/assets/gallery/thumbnail_5_2.jpg';
+import thumbnail_5_3 from '~/assets/gallery/thumbnail_5_3.jpg';
+import thumbnail_6_1 from '~/assets/gallery/thumbnail_6_1.jpg';
+import thumbnail_6_2 from '~/assets/gallery/thumbnail_6_2.jpg';
+import thumbnail_6_3 from '~/assets/gallery/thumbnail_6_3.jpg';
 import heart from '~/assets/heart_gallery.png';
 import { FontColor } from '~/constants';
 
@@ -50,6 +59,8 @@ const Button = styled.button({
 });
 
 function WeddingGallery() {
+  const [isExtended, setIsExtended] = useState(false);
+
   return (
     <Wrapper id="gallery">
       <Title>
@@ -66,11 +77,27 @@ function WeddingGallery() {
         <Thumbnail src={thumbnail_3_1} />
         <Thumbnail src={thumbnail_3_2} />
         <Thumbnail src={thumbnail_3_3} />
+        <Thumbnail src={thumbnail_4_1} />
+        <Thumbnail src={thumbnail_4_2} />
+        <Thumbnail src={thumbnail_4_3} />
+        {
+          isExtended
+          && (
+            <>
+              <Thumbnail src={thumbnail_5_1} />
+              <Thumbnail src={thumbnail_5_2} />
+              <Thumbnail src={thumbnail_5_3} />
+              <Thumbnail src={thumbnail_6_1} />
+              <Thumbnail src={thumbnail_6_2} />
+              <Thumbnail src={thumbnail_6_3} />
+            </>
+          )
+        }
       </ThumbnailsWrapper>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a>
-        <Button>+ 사진 더보기</Button>
-      </a>
+      {
+        !isExtended
+        && <Button onClick={() => setIsExtended(true)}>+ 사진 더보기</Button>
+      }
     </Wrapper>
   );
 }
