@@ -12,6 +12,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     'default-case': 0,
     'consistent-return': 0,
+    'linebreak-style': 0,
     'import/extensions': [
       'error',
       {

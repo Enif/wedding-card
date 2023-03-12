@@ -11,10 +11,11 @@ import Location from './components/Location/Location';
 import MainPhoto from './components/MainPhoto/MainPhoto';
 import ThanksTo from './components/ThanksTo/ThanksTo';
 import WeddingGallery from './components/WeddingGallery/WeddingGallery';
+import { maxWidth } from './constants';
 
 const StyledApp = styled.div({
   textAlign: 'center',
-  maxWidth: '30rem',
+  maxWidth,
   position: 'relative',
 });
 

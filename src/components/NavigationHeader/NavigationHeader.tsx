@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React, { useEffect, useState } from 'react';
-import { paddingTop } from '~/constants';
+import { maxWidth, paddingTop } from '~/constants';
 import { Copyright } from '../Copyright/Copyright';
 import HeaderTitle from './HeaderTitle';
 import MenuButton from './MenuButton';
@@ -12,7 +12,7 @@ const Wrapper = styled.div<{ isMenuOpen: boolean }>((props) => ({
   display: 'flex',
   justifyContent: 'space-between',
   width: '100%',
-  maxWidth: '30rem',
+  maxWidth,
   position: 'fixed',
   transition: 'height 0.4s',
   zIndex: 1,
@@ -48,10 +48,10 @@ export function NavigationHeader() {
       </Header>
       {
         isMenuOpen && (
-        <>
-          <Navigation closeMenu={() => setIsMenuOpen(false)} />
-          <Copyright isHeader />
-        </>
+          <>
+            <Navigation closeMenu={() => setIsMenuOpen(false)} />
+            <Copyright isHeader />
+          </>
         )
       }
     </Wrapper>

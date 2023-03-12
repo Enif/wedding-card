@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 
 import coupleImg from '~/assets/couple.png';
+import heartImg from '~/assets/header_heart.png';
 
 const Wrapper = styled.div<{ opacity: number }>((props) => ({
   position: 'absolute',
@@ -25,6 +26,13 @@ const Text = styled.p({
   fontSize: '1.1rem',
   color: '#F19086',
   fontWeight: 'bold',
+});
+
+const Heart = styled.img({
+  margin: '0 0.4rem 2px',
+  height: '90%',
+  verticalAlign: 'middle',
+  // display: fl
 });
 
 type Props = {
@@ -52,7 +60,11 @@ function Couple(props: Props) {
   return (
     <Wrapper opacity={opacity}>
       <Drawing src={coupleImg} />
-      <Text>영재 ♥ 수연 </Text>
+      <Text>
+        영재
+        <Heart src={heartImg} />
+        수연
+      </Text>
     </Wrapper>
   );
 }

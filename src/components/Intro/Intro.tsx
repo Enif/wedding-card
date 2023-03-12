@@ -46,6 +46,7 @@ const Background = styled.img<{ progress: number }>((props) => ({
   position: 'absolute',
   left: 0,
   right: 0,
+  // width: '100%',
   height: '100%',
   ...(props.progress > 75 && {
     transform: `scale(${1 + (props.progress - 75) / 100}, ${1 + (props.progress - 75) / 100})`,
@@ -56,9 +57,10 @@ const Background = styled.img<{ progress: number }>((props) => ({
 
 const WeddingDay = styled.img<{ progress: number }>((props) => ({
   position: 'absolute',
-  left: 0,
-  right: 0,
-  top: 'calc(50% - 15rem)',
+  height: '50%',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
   opacity: 1 - (props.progress / 15),
   // bottom: '100%',
 }));

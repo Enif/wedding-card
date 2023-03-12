@@ -5,6 +5,7 @@ import sooyeonProfileImg from '~/assets/profile_sooyeon.jpg';
 import callIcon from '~/assets/icon_call.svg';
 import messageIcon from '~/assets/icon_message.svg';
 import AccountNumber from './AccountNumber';
+import { Size } from '~/constants';
 
 const Wrapper = styled.div({
   padding: '2rem 0',
@@ -53,10 +54,16 @@ const Button = styled.button({
   '&:hover': {
     background: 'rgba(255, 255, 255, 0.4)',
   },
+  [`${Size.XSS}`]: {
+    width: '2.8rem',
+    height: '2rem',
+  },
 });
 
 const Icon = styled.img({
-
+  [`${Size.XSS}`]: {
+    width: '0.8rem',
+  },
 });
 
 const Account = styled.div({
