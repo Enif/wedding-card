@@ -119,12 +119,12 @@ function Contact() {
         <Grid>
           <AccountTitle>- 신랑 측 -</AccountTitle>
           <AccountTitle>- 신부 측 -</AccountTitle>
-          <AccountNumber name="신랑 김영재" accountNumber="신한 312-0000-0000" />
-          <AccountNumber name="신부 안수연" accountNumber="신한 312-0000-0000" />
-          <AccountNumber name="아버지 김국태" accountNumber="신한 312-0000-0000" />
-          <AccountNumber name="아버지 안경모" accountNumber="신한 312-0000-0000" />
-          <AccountNumber name="어머니 서은희" accountNumber="신한 312-0000-0000" />
-          <AccountNumber name="어머니 고희정" accountNumber="신한 312-0000-0000" />
+          <AccountNumber name="신랑 김영재" accountNumber="신한 110-348-543916" />
+          <AccountNumber name="신부 안수연" accountNumber="농협 302-0686-596291" />
+          <AccountNumber name="아버지 김국태" accountNumber="국민 759302-01-180052" />
+          <AccountNumber name="아버지 안경모" accountNumber="우리 1002-863-350428" />
+          <AccountNumber name="어머니 서은희" accountNumber="우리 1002-337-506654" />
+          <AccountNumber name="어머니 고희정" accountNumber="신한 110-001-365402" />
         </Grid>
       </Account>
     </Wrapper>

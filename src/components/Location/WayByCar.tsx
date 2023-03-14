@@ -91,9 +91,9 @@ function WayByCar() {
       <Parking>
         <SubTitle>- 주차 안내 -</SubTitle>
         <SubText>
-          건물 옆 전용 주차장 - 무료, 약 ~~대 수용 가능
+          건물 옆 전용 주차장 - 무료, 약 180대 수용 가능
           <br />
-          건너편 공영 주차장  - 2시간 무료, 이후 10분 당 200원?
+          건너편 공영 주차장  - 2시간 무료, 이후 10분 당 200원
         </SubText>
       </Parking>
     </Wrapper>
